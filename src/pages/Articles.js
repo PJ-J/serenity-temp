@@ -2,9 +2,16 @@ import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import './Articles.css'
 
-// , {
-//   mode: 'no-cors'
-// }
+const linkStyle = {
+  // margin: "1rem",
+  boxShadow: '0 2px 4px 0 rgba(136, 144, 195, 0.2), 0 5px 15px 0 rgba(37, 44, 97, 0.15)',
+  padding: '.5rem',
+  textDecoration: "none",
+  color: '#fff',
+  background: '#1BA098',
+  borderRadius: '5px'
+};
+
 const Articles = () => {
   const [articles, setArticles] = useState(null)
 
@@ -140,9 +147,9 @@ const Articles = () => {
                       <p>
                       {article.data.selftext.substr(0, 150) + "..."}
                       </p>
-                      <Link to='/articledetails' type="button" class="read_more_btn">
+                      <a href={article.data.url} target="_blank" style={linkStyle} type="button" class="read_more_btn">
                         Read More
-                      </Link>
+                      </a>
                     </div>
                   </div>
                 </div>

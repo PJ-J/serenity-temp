@@ -33,7 +33,7 @@ const Router = () => {
      <NavBar />
       <Routes>
         {/* <Route path="/" element={<Landing />} /> */}
-        <Route path="/articles/:articleid/*" element={<ArticleDetails />}/>
+        <Route path="/articledetails" element={<ArticleDetails />}/>
         <Route path="/timer" element={<Timer />} />
         <Route path="/articles" element={<Articles/>} />
         <Route path="/users" element={<Users/>} />

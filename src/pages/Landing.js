@@ -1,6 +1,6 @@
 import React from 'react'
 // import Rain from '../components/assets/rain.mp4'
-import RainTrees from '../components/assets/raintrees.mp4'
+import Park from '../components/assets/park.mp4'
 import { Link } from 'react-router-dom';
 // import styles from './Landing.module.css'
 
@@ -19,11 +19,11 @@ const Landing = () => {
     >
       <div>
       <h1
-        style={{ paddingTop: '25vh', fontSize: '8rem' }}
+        style={{ paddingTop: '27vh', fontSize: '8rem' }}
       >
         Serenity
       </h1>
-      <a href='/timer' style={{textDecoration: 'none', color: '#fff'}} ><div className='row justify-content-center' style={{paddingTop: '25vh', fontSize: '2rem'}}>Enter</div></a>
+      <a href='/timer' style={{textDecoration: 'none', color: '#fff'}} ><div className='row justify-content-center' style={{paddingTop: '20vh', fontSize: '2rem'}}>Enter</div></a>
       </div>
       <div>
         {/* <video
@@ -58,7 +58,7 @@ const Landing = () => {
             zIndex: '-1',
           }}
         >
-          <source src={RainTrees} type="video/mp4" />
+          <source src={Park} type="video/mp4" />
         </video>
       </div>
     </div>
