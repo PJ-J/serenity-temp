@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import Sound from 'react-sound'
 import 'react-circular-progressbar/dist/styles.css'
 import styles from '../App.module.css'
-import Rain from '../components/assets/rain.mp4'
+// import Rain from '../components/assets/rain.mp4'
 
 
 // import logo from './logo.svg';

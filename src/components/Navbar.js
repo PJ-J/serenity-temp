@@ -172,7 +172,7 @@ const Navbar = () => {
       <NavLink
         to="/timer"
         style={({ isActive }) => ({
-          color: isActive ? "#fff" : "#051622",
+          color: isActive ? "#fff" : "#d3d3d3",
           textShadow: isActive ? "0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #fff" : "none",          
           // boxShadow: isActive
           //   ? "0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)"
@@ -192,7 +192,7 @@ const Navbar = () => {
       <NavLink
         to="/breathing"
         style={({ isActive }) => ({
-          color: isActive ? "#fff" : "#051622",
+          color: isActive ? "#fff" : "#d3d3d3",
           textShadow: isActive ? "0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #fff" : "none",    
           // boxShadow: isActive
           //   ? "0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)"
@@ -211,7 +211,7 @@ const Navbar = () => {
       <NavLink
         to="/articles"
         style={({ isActive }) => ({
-          color: isActive ? "#fff" : "#051622",
+          color: isActive ? "#fff" : "#d3d3d3",
           textShadow: isActive ? "0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #fff" : "none",    
           // boxShadow: isActive
           //   ? "0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)"
@@ -230,7 +230,7 @@ const Navbar = () => {
       <NavLink
         to="/chart"
         style={({ isActive }) => ({
-          color: isActive ? "#fff" : "#051622",
+          color: isActive ? "#fff" : "#d3d3d3",
           textShadow: isActive ? "0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #fff" : "none",    
           // boxShadow: isActive
           //   ? "0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)"
@@ -249,7 +249,7 @@ const Navbar = () => {
       <NavLink
         to="/users"
         style={({ isActive }) => ({
-          color: isActive ? "#fff" : "#051622",
+          color: isActive ? "#fff" : "#d3d3d3",
           textShadow: isActive ? "0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #fff" : "none",    
           // boxShadow: isActive
           //   ? "0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)"

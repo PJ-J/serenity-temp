@@ -19,13 +19,13 @@ const Articles = () => {
 
   if (articles) {
   return (
-    <main className="container">
+    <main style={{ fontFamily: 'Merriweather'}} className="container">
       <section className="row justify-content-center">
         {
         articles.data.children.map((article) => (
           <div className="col-md-6" key={article.data.id}>
             <div className="card shadow my-2">
-              <div className="card-body">
+              <div style={{background: '#d3d3d3'}} className="card-body">
                 <h4 style={{color: '#212529'}} className="card-title">{article.data.title}</h4>
 
                 <p style={{color: '#212529'}} className="card-text">

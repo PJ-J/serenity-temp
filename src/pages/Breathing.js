@@ -14,7 +14,7 @@ const Breathing = () => {
   let quote = quotesArr[Math.floor(Math.random() * quotesArr.length)]
 
   return (
-    <div style={{ color: '#fff' }} className="container mt-3">
+    <div style={{ fontFamily: 'Merriweather', color: '#fff' }} className="container mt-3">
       <div>
         <h1> Meditation Techniques </h1>
 
