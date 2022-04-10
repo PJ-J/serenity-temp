@@ -1,8 +1,10 @@
 import React from 'react'
 import styles from './../App.module.css'
 import Rain from './assets/rain.mp4'
-import RainTrees from './assets/raintrees.mp4'
+// import RainTrees from './assets/raintrees.mp4'
 import Stream from './assets/stream.mp4'
+import Waves from './assets/waves.mp4'
+import Forest from './assets/forest.mp4'
 
 function BackgroundImage({ currentImage }) {
   const getClassName = (imgUrl) => {
@@ -53,7 +55,7 @@ function BackgroundImage({ currentImage }) {
           zIndex: '-1',
         }}
         >
-          <source src={RainTrees} type="video/mp4" />
+          <source src={Forest} type="video/mp4" />
         </video>
       
       <div
@@ -79,10 +81,25 @@ function BackgroundImage({ currentImage }) {
       >
         <source src={Stream} type="video/mp4" />
       </video>
-      <div
+      <video
         className={getClassName('img/waves.jpg')}
-        style={{ backgroundImage: `url(img/waves.jpg)` }}
-      />
+        // style={{ backgroundImage: `url(img/waves.jpg)` }}
+        autoPlay
+        loop
+        muted
+        style={{
+          position: 'absolute',
+          width: '100%',
+          left: '50%',
+          top: '50%',
+          height: '100%',
+          objectFit: 'cover',
+          transform: 'translate(-50%, -50%)',
+          zIndex: '-1',
+        }}
+      >
+        <source src={Waves} type="video/mp4" />
+      </video>
     </>
   )
 }

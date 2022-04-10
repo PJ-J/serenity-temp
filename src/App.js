@@ -4,6 +4,7 @@ import Timer from './pages/Timer'
 import Landing from './pages/Landing'
 import NavBar from './components/Navbar'
 import Articles from './pages/Articles.js'
+import ArticleDetails from './pages/ArticleDetails.js'
 // import Navbar from '../components/Navbar';
 import Users from './pages/Users'
 import Breathing from './pages/Breathing'
@@ -32,7 +33,7 @@ const Router = () => {
      <NavBar />
       <Routes>
         {/* <Route path="/" element={<Landing />} /> */}
-            
+        <Route path="/articles/:articleid/*" element={<ArticleDetails />}/>
         <Route path="/timer" element={<Timer />} />
         <Route path="/articles" element={<Articles/>} />
         <Route path="/users" element={<Users/>} />
