@@ -16,7 +16,8 @@
     "react-dom": "17.0.0",
     "react-router-dom": "^6.3.0",
     "react-scripts": "2.1.8",
-    "react-sound": "^1.2.0"
+    "react-sound": "^1.2.0",
+    "sweetalert2": "^11.4.8"
   },
   "scripts": {
     "start": "react-scripts start",

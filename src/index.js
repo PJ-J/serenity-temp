@@ -1,9 +1,10 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import './index.css'
-import Root from './App'
+import Root from './App.jsx'
 import * as serviceWorker from './serviceWorker'
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css'
+// import '@babel/polyfill';
 
 ReactDOM.render(<Root />, document.getElementById('root'))
 
