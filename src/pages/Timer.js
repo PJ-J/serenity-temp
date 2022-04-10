@@ -160,9 +160,10 @@ class Timer extends Component {
       default:
         this.setState({
           audioUrl: rainAudio,
-          bgImg: rainImg,
- 
+          bgImg: rainImg
         });
+      
+       
   break
   }
 }

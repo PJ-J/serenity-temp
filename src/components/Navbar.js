@@ -162,7 +162,7 @@ const Navbar = () => {
         fontFamily: "merriweather",
         // opacity: '0.5',
         // backgroundImage: `url(${space})`,
-        backgroundImage: 'linear-gradient(to right, #051622, #1BA098)',
+        // backgroundImage: 'linear-gradient(to right, #051622, #1BA098)',
         // background: "#2a2a2a",
         boxShadow: "0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)",
       }}

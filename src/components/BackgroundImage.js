@@ -1,5 +1,7 @@
 import React from 'react'
 import styles from './../App.module.css'
+import Rain from './assets/rain.mp4'
+import RainTrees from './assets/raintrees.mp4'
 
 function BackgroundImage({ currentImage }) {
   const getClassName = (imgUrl) => {
@@ -12,14 +14,47 @@ function BackgroundImage({ currentImage }) {
 
   return (
     <>
-      <div
+      <video
         className={getClassName('img/rain.jpg')}
-        style={{ backgroundImage: `url("img/rain.jpg")` }}
-      />
-      <div
+        // style={{ backgroundImage: `url("img/rain.jpg")` }}
+        
+          autoPlay
+          loop
+          muted
+          style={{
+            position: 'absolute',
+            width: '100%',
+            left: '50%',
+            top: '50%',
+            height: '100%',
+            objectFit: 'cover',
+            transform: 'translate(-50%, -50%)',
+            zIndex: '-1',
+          }}
+        >
+          <source src={Rain} type="video/mp4" />
+        </video>
+      
+      <video
         className={getClassName('img/forest.jpg')}
-        style={{ backgroundImage: `url(img/forest.jpg)` }}
-      />
+        // style={{ backgroundImage: `url(img/forest.jpg)` }}
+        autoPlay
+        loop
+        muted
+        style={{
+          position: 'absolute',
+          width: '100%',
+          left: '50%',
+          top: '50%',
+          height: '100%',
+          objectFit: 'cover',
+          transform: 'translate(-50%, -50%)',
+          zIndex: '-1',
+        }}
+        >
+          <source src={RainTrees} type="video/mp4" />
+        </video>
+      
       <div
         className={getClassName('img/park.jpg')}
         style={{ backgroundImage: `url(img/park.jpg)` }}
