@@ -20,6 +20,7 @@ const Breathing = () => {
       className="container mt-3"
     >
       <div>
+        
         <h1> Meditation Techniques </h1>
 
         <div className="boxed">{`Meditative Wisdom: ${quote}`} </div>

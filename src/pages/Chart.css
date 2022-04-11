@@ -1,0 +1,33 @@
+body {
+  background-color: rgb(28, 28, 88);
+}
+
+/* 2.background-color for the container.It is set to white */
+#chartContainer {
+  /* background-color:  #d3d3d3; */
+
+  background-image: linear-gradient(45deg, #051622, #d3d3d3);
+  border-radius: 2em;
+  font-family: 'Merriweather';
+  color: black;
+  width: 60%;
+}
+
+.card-body {
+  background-color: #d3d3d3;
+  border-radius: 5px;
+}
+
+/* 3. added margin to the meditation time  linechart . So it is spaced out a little bit */
+.med-time {
+  margin-right: 2em;
+}
+/* added margin to the chill time doughnut chart  */
+/* .chill-time{
+  margin-left: 1em
+} */
+/* background-color for the card-header: gray was okay , but I just gave it some color :) */
+.card-header {
+  background-color: rgb(168, 168, 235);
+  color: rgb(13, 13, 13);
+}
