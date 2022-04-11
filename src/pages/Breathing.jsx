@@ -1,4 +1,5 @@
 import React from 'react'
+import './Breathing.css'
 
 const Breathing = () => {
   let quotesArr = [
@@ -14,13 +15,17 @@ const Breathing = () => {
   let quote = quotesArr[Math.floor(Math.random() * quotesArr.length)]
 
   return (
-    <div style={{ fontFamily: 'Merriweather', color: '#fff' }} className="container mt-3">
+    <div
+      style={{ fontFamily: 'Merriweather', color: '#fff' }}
+      className="container mt-3"
+    >
       <div>
         <h1> Meditation Techniques </h1>
 
         <div className="boxed">{`Meditative Wisdom: ${quote}`} </div>
         <div className="breathing-info mt-3">
           <h2>Box Breathing</h2>
+         
           <p>
             When you begin your meditation journey, you may think to yourself,
             "How difficult can it be?". Believe it or not, there are many ways
@@ -28,7 +33,7 @@ const Breathing = () => {
             instructed on this page.
           </p>
           <p>
-            Boxed breathing is quiet easy when you get the hang of it. Here we
+            Box breathing is quite easy when you get the hang of it. Here we
             will run through the steps.
           </p>
           <ul>
@@ -48,14 +53,19 @@ const Breathing = () => {
             flow of your breath during the meditation.
           </p>
         </div>
-        <div className="technique text-center mt-3">
-          <img id="boxed-img" src={require('../components/assets/Boxed.png')} />
+        
+        <div className="boxHolder d-flex justify-content-center m-3" >
+        <div id="box">
+            <div id="breath"></div>
+            <div id="ball"></div>
+          </div>
+          {/* <img id="boxed-img" src={require('../components/assets/Boxed.png')} /> */}
         </div>
       </div>
       <div id="focus">
         <h2>Focused breathing</h2>
         <p>
-          Now that we have learned about boxed breathing, lets move on to
+          Now that we have learned about box breathing, lets move on to
           another popular meditation method, focused breathing. Focused
           breathing is relatively simple and can be broken down into these 6
           steps.
@@ -75,9 +85,9 @@ const Breathing = () => {
 
       <div id="focus-image">
         {' '}
-        <div id="breathing">
-          <div id="Breath-img">
-            <img
+        <div id="breathing ">
+          <div className="Breath-img d-flex justify-content-center">
+            <img style={{height: '500px'}}
               id="breathing-exercise"
               src={require('../components/assets/breathing-exercises.gif')}
             />
