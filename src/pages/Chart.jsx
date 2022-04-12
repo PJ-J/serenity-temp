@@ -23,7 +23,7 @@ const Chart = () => {
   return (
     <section className='d-flex justify-content-center'>
       <div id="chartContainer" className="text-center p-3 m-3">
-        <h1 style={{ textShadow:'0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #fff'}}className="p-3"> Welcome , Garrett!</h1>
+        <h1 style={{ textShadow:'0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #fff'}}className="p-3"> Welcome , Garrett</h1>
 
         <div className="d-flex justify-content-center row ">
           {/* Card to hold the Meditation time chart */}
