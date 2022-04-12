@@ -4,13 +4,14 @@ import './Articles.css'
 
 const linkStyle = {
   // margin: "1rem",
-  boxShadow: '0 2px 4px 0 rgba(136, 144, 195, 0.2), 0 5px 15px 0 rgba(37, 44, 97, 0.15)',
+  boxShadow:
+    '0 2px 4px 0 rgba(136, 144, 195, 0.2), 0 5px 15px 0 rgba(37, 44, 97, 0.15)',
   padding: '.5rem',
-  textDecoration: "none",
+  textDecoration: 'none',
   color: '#fff',
   background: '#1BA098',
-  borderRadius: '5px'
-};
+  borderRadius: '5px',
+}
 
 const Articles = () => {
   const [articles, setArticles] = useState(null)
@@ -23,33 +24,6 @@ const Articles = () => {
 
   if (articles) {
     return (
-      //   <main style={{ fontFamily: 'Merriweather'}} className="container">
-      //     <section className="row justify-content-center">
-      //       {
-      //       articles.data.children.map((article) => (
-      //         <div className="col-md-6" key={article.data.id}>
-      //           <div className="card shadow my-2">
-      //             <div style={{background: '#d3d3d3'}} className="card-body">
-      //               <h4 style={{color: '#212529'}} className="card-title">{article.data.title}</h4>
-
-      //               <p style={{color: '#212529'}} className="card-text">
-      //                 {article.data.selftext.substr(0, 75) + "..."}
-      //               </p>
-      //               <Link
-      //                 to={`/articles/${article.id}`}
-      //                 className="btn btn-primary"
-      //               >
-      //                 More details
-      //               </Link>
-      //             </div>
-      //           </div>
-      //         </div>
-      //       ))}
-      //     </section>
-      //   </main>
-
-      //   // <h1>Articles</h1>
-      // )
       <div class="section_our_solution">
         <div class="row justify-content-center">
           {articles.data.children.map((article) => (
@@ -144,10 +118,14 @@ const Articles = () => {
                       <h3>{article.data.title}</h3>
                     </div>
                     <div class="solu_description">
-                      <p>
-                      {article.data.selftext.substr(0, 150) + "..."}
-                      </p>
-                      <a href={article.data.url} target="_blank" style={linkStyle} type="button" class="read_more_btn">
+                      <p>{article.data.selftext.substr(0, 150) + '...'}</p>
+                      <a
+                        href={article.data.url}
+                        target="_blank"
+                        style={linkStyle}
+                        type="button"
+                        class="read_more_btn"
+                      >
                         Read More
                       </a>
                     </div>

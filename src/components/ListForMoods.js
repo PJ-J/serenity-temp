@@ -6,9 +6,11 @@ const ListForMoods = () => {
   // 5 different  functions for 5 different moods
   const handleAnxious = () => {
     Swal.fire({
-      title: 'Serenity',
-      text: 'Run when you can, walk if you have to, crawl if you must; just never give up.',
-      confirmButtonText: 'Confirm',
+      icon: 'success',
+      background: '#d3d3d3',
+      title: 'Submission successful',      
+      text: '"Run when you can, walk if you have to, crawl if you must; just never give up."',
+      confirmButtonText: 'Back',
       confirmButtonColor: '#000099',
       width: '750px',
     })
@@ -18,9 +20,11 @@ const ListForMoods = () => {
 
   const handleSad = () => {
     Swal.fire({
-      title: 'Serenity',
-      text: 'When life gives you a hundred reasons to break down and cry, show life that you have a million reasons to smile and laugh.',
-      confirmButtonText: 'Confirm',
+      icon: 'success',
+      background: '#d3d3d3',
+      title: 'Submission successful',
+      text: '"When life gives you a hundred reasons to break down and cry, show life that you have a million reasons to smile and laugh."',
+      confirmButtonText: 'Back',
       confirmButtonColor: '#000099',
       width: '750px',
     })
@@ -28,9 +32,11 @@ const ListForMoods = () => {
 
   const handleDecent = () => {
     Swal.fire({
-      title: 'Serenity',
-      text: 'Doing what you like is freedom. Liking what you do is happiness!',
-      confirmButtonText: 'Confirm',
+      icon: 'success',
+      background: '#d3d3d3',
+      title: 'Submission successful',
+      text: '"Doing what you like is freedom. Liking what you do is happiness!"',
+      confirmButtonText: 'Back',
       confirmButtonColor: '#000099',
       width: '750px',
     })
@@ -38,9 +44,11 @@ const ListForMoods = () => {
 
   const handleHappy = () => {
     Swal.fire({
-      title: 'Serenity',
-      text: 'We don’t laugh because we’re happy – we’re happy because we laugh!',
-      confirmButtonText: 'Confirm',
+      icon: 'success',
+      background: '#d3d3d3',
+      title: 'Submission successful',
+      text: '"We don’t laugh because we’re happy – we’re happy because we laugh!"',
+      confirmButtonText: 'Back',
       confirmButtonColor: '#000099',
       width: '750px',
     })
@@ -48,9 +56,11 @@ const ListForMoods = () => {
 
   const handleMotivated = () => {
     Swal.fire({
-      title: 'Serenity',
-      text: 'The souls that have seen the darkest days can shine the brightest light. Keep going!',
-      confirmButtonText: 'Confirm',
+      icon: 'success',
+      background: '#d3d3d3',
+      title: 'Submission successful',
+      text: '"The souls that have seen the darkest days can shine the brightest light. Keep going!"',
+      confirmButtonText: 'Back',
       confirmButtonColor: '#000099',
       width: '750px',
     })

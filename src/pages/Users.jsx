@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-// import { useParams, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const Users = () => {
   const [name, setName] = useState("");
@@ -40,7 +40,7 @@ const Users = () => {
           </div> */}
       <div className="container d-flex justify-content-center mt-5">
         <div className="card mx-5 my-5">
-          <div className="card-body px-2">
+          <div style={{ backgroundImage: 'linear-gradient(45deg, #0AA6B0, #132053)' }} className="card-body px-2">
             <h2 className="card-heading px-3">Sign Up</h2>
             <h5 className="card-subheading px-3 pb-3">It's quick and easy.</h5>
 
@@ -82,24 +82,22 @@ const Users = () => {
                     onChange={handlePasswordCreate}
                   />{" "}
                 </div>
-                <small className="text-muted px-3">
+                <small className="px-3">
                   <p className="para2 pl-3">
-                    Use 8 or more characters with a mix of letters, numbers &
-                    <br />
-                    symbols
+                    Use 8 or more characters with a mix of letters, numbers & symbols
                   </p>
                 </small>
               </div>
               <div className="row rfour">
                 <div className="col-md-4 ml-3">
                   {" "}
-                  <button
+                  <Link to='/usercreated'><button
                     type="submit"
-                    className="btn btn-primary mt-3"
-                    onClick={createUser}
+                    className="btn btn-info mt-3"
+                    // onClick={createUser}
                   >
                     <span>Next step</span>
-                  </button>{" "}
+                  </button></Link>{" "}
                 </div>
               </div>
             </form>
