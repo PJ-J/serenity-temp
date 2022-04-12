@@ -1,5 +1,5 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 // import space from './assets/space2.jpg';
 import Logo from "./assets/Water_Drop.svg";
 import styles from '../App.module.css'
@@ -23,7 +23,7 @@ const Navbar = () => {
         boxShadow: "0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)",
       }}
     >
-      <img className={styles.img} src={Logo} alt="logo" />
+      <a href="/"><img className={styles.img} src={Logo} alt="logo" /></a>
 
       <NavLink
         to="/timer"
