@@ -33,7 +33,7 @@ const Router = () => {
           <Route path="/chart" element={<Chart />} />
           <Route path="/usercreated" element={<UserCreated />} />
         </Routes>
-        <Footer />
+        {/* <Footer /> */}
       </BrowserRouter>
     )
   }

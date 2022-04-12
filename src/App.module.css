@@ -5,6 +5,10 @@
   align-items: center;
 }
 
+.App::-webkit-scrollbar {
+  display: none;
+}
+
 .breathing {
   color: #fff;
 }

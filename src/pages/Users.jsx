@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import Footer from '../components/Footer.jsx'
 
 const Users = () => {
   const [name, setName] = useState("");
@@ -32,13 +33,14 @@ const Users = () => {
   };
 
   return (
-    <>
+    <div>
       {/* <div className="container text-center">
               <div className="row">
                   Users Page
               </div>
           </div> */}
-      <div className="container d-flex justify-content-center mt-5">
+          
+      <div style={{ marginBottom: '22vh'}} className="container d-flex justify-content-center mt-5">
         <div className="card mx-5 my-5">
           <div style={{ backgroundImage: 'linear-gradient(45deg, #0AA6B0, #132053)' }} className="card-body px-2">
             <h2 className="card-heading px-3">Sign Up</h2>
@@ -104,7 +106,8 @@ const Users = () => {
           </div>
         </div>
       </div>
-    </>
+      <Footer />
+    </div>
   );
 };
 
