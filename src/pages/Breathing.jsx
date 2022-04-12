@@ -21,8 +21,8 @@ const Breathing = () => {
     >
       <div>
         {/* <div className="boxed">{`Meditative Wisdom: ${quote}`} </div> */}
-        <div class="container mb-5">
-          <div class="blockquote">
+        <div className="container mb-5">
+          <div className="blockquote">
             <h1>{quote}</h1>
             {/* <h4>&mdash;Jared Spool</h4> */}
           </div>

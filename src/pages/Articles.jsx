@@ -24,18 +24,18 @@ const Articles = () => {
 
   if (articles) {
     return (
-      <div class="section_our_solution">
-        <div class="row justify-content-center">
+      <div className="section_our_solution">
+        <div className="row justify-content-center">
           {articles.data.children.map((article) => (
-            <div class="col-lg-12" key={article.data.id}>
-              <div class="our_solution_category">
-                <div class="solution_cards_box">
-                  <div class="solution_card">
-                    <div class="hover_color_bubble"></div>
-                    <div class="so_top_icon">
+            <div className="col-lg-12" key={article.data.id}>
+              <div className="our_solution_category">
+                <div className="solution_cards_box">
+                  <div className="solution_card">
+                    <div className="hover_color_bubble"></div>
+                    <div className="so_top_icon">
                       <svg
                         id="Layer_1"
-                        enable-background="new 0 0 512 512"
+                        enableBackground="new 0 0 512 512"
                         height="50"
                         viewBox="0 0 512 512"
                         width="40"
@@ -114,17 +114,17 @@ const Articles = () => {
                         </g>
                       </svg>
                     </div>
-                    <div class="solu_title">
-                      <h3>{article.data.title}</h3>
+                    <div className="solu_title">
+                      <h3>{article.data.title.substr(0, 150) + '...'}</h3>
                     </div>
-                    <div class="solu_description">
+                    <div className="solu_description">
                       <p>{article.data.selftext.substr(0, 150) + '...'}</p>
                       <a
                         href={article.data.url}
                         target="_blank"
                         style={linkStyle}
                         type="button"
-                        class="read_more_btn"
+                        className="read_more_btn"
                       >
                         Read More
                       </a>
