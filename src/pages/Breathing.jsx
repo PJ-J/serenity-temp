@@ -90,8 +90,8 @@ const Breathing = () => {
         </h2>
         <div className="breathing-info">
           <p>
-            Now that we have learned about box breathing, lets move on to
-            another popular meditation method, focused breathing. Focused
+            Now that we have learned about box breathing, let's move on to
+            another popular technique, focused breathing. Focused
             breathing is relatively simple and can be broken down into these 6
             steps.
           </p>
@@ -104,7 +104,7 @@ const Breathing = () => {
               Step 5: As you breathe out, say in your mind, "I breathe out
               stress and tension."
             </li>
-            <li>Step 6: Continue for 10 to 20 minutes.</li>
+            <li>Step 6: Continue until you feel re-centered.</li>
           </ul>
         </div>
 
