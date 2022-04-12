@@ -12,38 +12,31 @@ import UserCreated from './pages/UserCreated.jsx'
 
 document.body.style = 'background: #051622'
 
-
 const Router = () => {
-    
-
-  if(window.location.pathname === '/') {
-      return (
-        <BrowserRouter>
-         <Routes>
-        <Route path="/" element={<Landing />} />
+  if (window.location.pathname === '/') {
+    return (
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Landing />} />
         </Routes>
-        </BrowserRouter>
-      )
+      </BrowserRouter>
+    )
   } else {
-
-  return (
-      
-    <BrowserRouter>
-     
-     <NavBar />
-      <Routes>
-        <Route path="/timer" element={<Timer />} />
-        <Route path="/articles" element={<Articles/>} />
-        <Route path="/users" element={<Users/>} />
-        <Route path="/breathing" element={<Breathing/>} />
-        <Route path="/chart" element={<Chart/>} />
-        <Route path="/usercreated" element={<UserCreated/>} />
-       
-      </Routes>
-      <Footer />
-    </BrowserRouter>
-  )
-}
+    return (
+      <BrowserRouter>
+        <NavBar />
+        <Routes>
+          <Route path="/timer" element={<Timer />} />
+          <Route path="/articles" element={<Articles />} />
+          <Route path="/users" element={<Users />} />
+          <Route path="/breathing" element={<Breathing />} />
+          <Route path="/chart" element={<Chart />} />
+          <Route path="/usercreated" element={<UserCreated />} />
+        </Routes>
+        <Footer />
+      </BrowserRouter>
+    )
+  }
 }
 
 export default Router
