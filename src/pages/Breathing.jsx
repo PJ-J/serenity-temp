@@ -86,7 +86,7 @@ const Breathing = () => {
           }}
           className="text-center"
         >
-          Focused breathing
+          Focused Breathing
         </h2>
         <div className="breathing-info">
           <p>
