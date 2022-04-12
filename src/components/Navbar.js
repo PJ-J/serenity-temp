@@ -18,7 +18,7 @@ const Navbar = () => {
         fontFamily: "merriweather",
         // opacity: '0.5',
         // backgroundImage: `url(${space})`,
-        backgroundImage: 'linear-gradient(to right, #d3d3d3, #051622)',
+        backgroundImage: 'linear-gradient(45deg, #d3d3d3, #051622)',
         // background: "#2a2a2a",
         boxShadow: "0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)",
       }}
@@ -36,7 +36,7 @@ const Navbar = () => {
           // background: isActive ? "lightgrey" : "none",
           padding: isActive ? "5px" : "5px",
           margin: isActive ? "5px" : "5px",
-          marginLeft: '72vw',
+          marginLeft: '69vw',
           // borderRadius: isActive ? "5px" : "none",
           textDecoration: isActive ? "none" : "none",
         })}
@@ -80,7 +80,7 @@ const Navbar = () => {
         })}
         className={({ isActive }) => `nav_link${isActive ? " active" : ""}`}
       >
-        Articles
+        r/Meditation
       </NavLink>
 
       <NavLink
@@ -118,7 +118,7 @@ const Navbar = () => {
         })}
         className={({ isActive }) => `nav_link${isActive ? " active" : ""}`}
       >
-        Users
+        Account
       </NavLink>
     </nav>
   );
