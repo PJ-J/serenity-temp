@@ -138,7 +138,7 @@ const Articles = () => {
       </div>
     )
   } else {
-    return <h1>loading</h1>
+    return <div style={{height: '100vh'}}><h1>loading</h1></div>
   }
 }
 

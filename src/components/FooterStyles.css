@@ -1,0 +1,29 @@
+.main-footer {
+  /* background-color: #bdc8f2 ; */
+  color: white;
+  font-family: 'Merriweather';
+  font-size: x-small;
+  margin-top: 3em;
+  padding-top: 3em;
+  position: relative;
+  bottom: 0px;
+  width: 100%;
+}
+
+.col {
+  text-align: center;
+}
+
+/* .list-unstyled {
+  text-decoration: none;
+} */
+
+a:link {
+  text-decoration: none;
+  color: #d3d3d3;
+}
+
+a:hover {
+  color: #2b3f8f;
+  text-decoration: none;
+}

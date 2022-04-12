@@ -3,6 +3,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Timer from './pages/Timer.jsx'
 import Landing from './pages/Landing.jsx'
 import NavBar from './components/Navbar.jsx'
+import Footer from './components/Footer.jsx'
 import Articles from './pages/Articles.jsx'
 import Users from './pages/Users.jsx'
 import Breathing from './pages/Breathing.jsx'
@@ -39,6 +40,7 @@ const Router = () => {
         <Route path="/usercreated" element={<UserCreated/>} />
        
       </Routes>
+      <Footer />
     </BrowserRouter>
   )
 }
