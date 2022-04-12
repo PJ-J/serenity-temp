@@ -27,15 +27,13 @@ const Breathing = () => {
             {/* <h4>&mdash;Jared Spool</h4> */}
           </div>
         </div>
-          <h2 className="text-center">Box Breathing</h2>
+          <h2 style={{ textShadow: '0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #fff'}} className="text-center">Box Breathing</h2>
 
         <div className="breathing-info">
 
           <p>
             When you begin your meditation journey, you may think to yourself,
-            "How difficult can it be?" Believe it or not, there are many ways to
-            meditate. One of the most popular ways, box breathing, will be
-            instructed on this page.
+            "Where do I start?" Finding a breathing technique that works for you is very important for beginners. One of the most popular techniques, box breathing, will be instructed on this page.
           </p>
           <p>
             Box breathing is quite easy when you get the hang of it. Here we
@@ -71,7 +69,7 @@ const Breathing = () => {
           {/* <img id="boxed-img" src={require('../components/assets/Boxed.png')} /> */}
         </div>
       </div>
-        <h2 className="text-center">Focused breathing</h2>
+        <h2 style={{ textShadow: '0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #fff'}} className="text-center">Focused breathing</h2>
       <div className='breathing-info'>
         <p>
           Now that we have learned about box breathing, lets move on to another
