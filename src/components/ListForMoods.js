@@ -26,7 +26,7 @@ const ListForMoods = () => {
     })
   }
 
-  const handleGood = () => {
+  const handleDecent = () => {
     Swal.fire({
       title: 'Serenity',
       text: 'Doing what you like is freedom. Liking what you do is happiness!',
@@ -62,14 +62,6 @@ const ListForMoods = () => {
         <li className="list-group-item">
           <button
             className="btn btn-outline-secondary btn-lg border-0"
-            onClick={handleAnxious}
-          >
-            Anxious
-          </button>
-        </li>
-        <li className="list-group-item">
-          <button
-            className="btn btn-outline-secondary btn-lg border-0"
             onClick={handleSad}
           >
             Sad
@@ -78,9 +70,17 @@ const ListForMoods = () => {
         <li className="list-group-item">
           <button
             className="btn btn-outline-secondary btn-lg border-0"
-            onClick={handleGood}
+            onClick={handleAnxious}
           >
-            Good
+            Anxious
+          </button>
+        </li>
+        <li className="list-group-item">
+          <button
+            className="btn btn-outline-secondary btn-lg border-0"
+            onClick={handleDecent}
+          >
+            Decent
           </button>
         </li>
         <li className="list-group-item">

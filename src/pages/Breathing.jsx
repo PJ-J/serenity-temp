@@ -6,10 +6,10 @@ const Breathing = () => {
     'Quiet the mind and the soul will speak. – Ma Jaya Sati Bhagavati',
     'Meditation is not about stopping thoughts, but recognizing that we are more than our thoughts and our feelings. - Arianna Huffington ',
     'Meditation is like a gym in which you develop the powerful mental muscles of calm and insight. – Ajahn Brahm',
-    'When meditation is mastered, the mind is unwavering like the flame of a candle in a windless place” —Bhagavad Gita',
+    'When meditation is mastered, the mind is unwavering like the flame of a candle in a windless place — Bhagavad Gita',
     'Be here now. Be someplace later. Is that so complicated? – David M. Bader',
     'The quieter you become, the more you are able to hear – Rumi',
-    'Your goal is not to battle with the mind, but to witness the mind.– Swami Muktananda',
+    'Your goal is not to battle with the mind, but to witness the mind. – Swami Muktananda',
   ]
   // let randomValue = quotesArr[Math.floor(Math.random() * quotesArr.length)]
   let quote = quotesArr[Math.floor(Math.random() * quotesArr.length)]
@@ -20,17 +20,21 @@ const Breathing = () => {
       className="container mt-3"
     >
       <div>
-        
-        <h1> Meditation Techniques </h1>
+        {/* <div className="boxed">{`Meditative Wisdom: ${quote}`} </div> */}
+        <div class="container mb-5">
+          <div class="blockquote">
+            <h1>{quote}</h1>
+            {/* <h4>&mdash;Jared Spool</h4> */}
+          </div>
+        </div>
+          <h2 className="text-center">Box Breathing</h2>
 
-        <div className="boxed">{`Meditative Wisdom: ${quote}`} </div>
-        <div className="breathing-info mt-3">
-          <h2>Box Breathing</h2>
-         
+        <div className="breathing-info">
+
           <p>
             When you begin your meditation journey, you may think to yourself,
-            "How difficult can it be?". Believe it or not, there are many ways
-            to meditate. One of the most popular ways, boxed breathing, will be
+            "How difficult can it be?" Believe it or not, there are many ways to
+            meditate. One of the most popular ways, box breathing, will be
             instructed on this page.
           </p>
           <p>
@@ -47,29 +51,32 @@ const Breathing = () => {
               exhaling for 4 seconds.
             </li>
             <li>Step 3: Slowly exhale through your mouth for 4 seconds.</li>
-            <li>Step 4: Repeat steps 1 to 3 until you feel re-centered.</li>
+            <li>
+              Step 4: Hold again for 4 seconds. Repeat steps until you feel
+              re-centered.
+            </li>
           </ul>
-          <p>
-            Demonstrated below is an image to help you visualize the ebb and
-            flow of your breath during the meditation.
-          </p>
+          
         </div>
-        
-        <div className="boxHolder d-flex justify-content-center m-3" >
-        <div id="box">
+        <h5 className="text-center">
+            Use the animation below to time the ebb and flow of your
+            breath during the exercise.
+          </h5>
+
+        <div className="boxHolder d-flex justify-content-center m-4">
+          <div id="box">
             <div id="breath"></div>
             <div id="ball"></div>
           </div>
           {/* <img id="boxed-img" src={require('../components/assets/Boxed.png')} /> */}
         </div>
       </div>
-      <div id="focus">
-        <h2>Focused breathing</h2>
+        <h2 className="text-center">Focused breathing</h2>
+      <div className='breathing-info'>
         <p>
-          Now that we have learned about box breathing, lets move on to
-          another popular meditation method, focused breathing. Focused
-          breathing is relatively simple and can be broken down into these 6
-          steps.
+          Now that we have learned about box breathing, lets move on to another
+          popular meditation method, focused breathing. Focused breathing is
+          relatively simple and can be broken down into these 6 steps.
         </p>
         <ul>
           <li>Step 1: Close your eyes</li>
@@ -84,17 +91,18 @@ const Breathing = () => {
         </ul>
       </div>
 
-      <div id="focus-image">
+      {/* <div id="focus-image">
         {' '}
         <div id="breathing ">
           <div className="Breath-img d-flex justify-content-center">
-            <img style={{height: '500px'}}
+            <img
+              style={{ height: '500px' }}
               id="breathing-exercise"
               src={require('../components/assets/breathing-exercises.gif')}
             />
           </div>
         </div>
-      </div>
+      </div> */}
     </div>
   )
 }

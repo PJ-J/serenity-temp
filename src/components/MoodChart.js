@@ -4,7 +4,7 @@ import { Chart as ChartJS } from 'chart.js/auto';
 
 const MoodChart = ({}) => {
     return <Doughnut data={{
-        labels : ['Sad', 'Anxious','Good','Happy', 'Motivated'],
+        labels : ['Sad', 'Anxious','Decent','Happy', 'Motivated'],
         datasets : [{
             label :"# of Votes",
             data : [3 ,2, 10 ,10 ,20],
@@ -29,7 +29,11 @@ const MoodChart = ({}) => {
 
         }],
         
-        
+        options: {
+            animation: {
+                duration: 0
+            }
+        }
 
 
     }} />

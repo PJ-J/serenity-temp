@@ -29,7 +29,11 @@ const DailyChillTime = ()=> {
 
         }],
 
-
+        options: {
+            animation: {
+                duration: 0
+            }
+        }
 
 
     }} />

@@ -49,9 +49,10 @@
   border: none;
   box-shadow: inset 0 0 5px #000000;
   background-color: #ffffff42;
-  color: white;
-  font-family: Courier;
-  font-weight: bold;
+  color: #fff;
+  text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #fff;
+  font-family: Merriweather;
+  font-weight: bolder;
   pointer-events: none;
 }
 
@@ -68,5 +69,12 @@
 }
 
 .minutes {
-  color: white;
+  color: #fff;
+  font-family: 'Merriweather';
+  font-weight: bolder;
+  text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #fff;
+  margin: 0;
+  /* padding: 5px; */
+  /* background-color: #d3d3d3; */
+  /* border-radius: 5px; */
 }

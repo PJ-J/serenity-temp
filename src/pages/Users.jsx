@@ -38,7 +38,7 @@ const Users = () => {
                   Users Page
               </div>
           </div> */}
-      <div className="container d-flex justify-content-center">
+      <div className="container d-flex justify-content-center mt-5">
         <div className="card mx-5 my-5">
           <div className="card-body px-2">
             <h2 className="card-heading px-3">Sign Up</h2>
@@ -84,7 +84,7 @@ const Users = () => {
                 </div>
                 <small className="text-muted px-3">
                   <p className="para2 pl-3">
-                    Use 8 or more characters with a mix of letters,numbers &
+                    Use 8 or more characters with a mix of letters, numbers &
                     <br />
                     symbols
                   </p>

@@ -23,11 +23,11 @@ const Chart = () => {
   return (
     <section className='d-flex justify-content-center'>
       <div id="chartContainer" className="text-center p-3 m-3">
-        <h1 className="p-3"> Welcome , Garrett!</h1>
+        <h1 style={{ textShadow:'0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #fff'}}className="p-3"> Welcome , Garrett!</h1>
 
         <div className="d-flex justify-content-center row ">
           {/* Card to hold the Meditation time chart */}
-          <div className="card col-5 p-0 med-time">
+          <div className="card col-4 p-0 med-time">
             <h5 className="card-header">Meditation Time</h5>
             <div className="card-body">
               <h5 className="card-title">Last 7 days</h5>
@@ -37,7 +37,7 @@ const Chart = () => {
 
           {/* Section for displaying daily meditation time */}
           <div className="card col-3 p-0 chill-time">
-            <h5 className="card-header">Daily Chill Time</h5>
+            <h5 className="card-header">Daily Progress</h5>
             <div className="card-body">
               <DailyChillTime />
             </div>
@@ -46,7 +46,7 @@ const Chart = () => {
 
         <div className="d-flex justify-content-center mt-3 ">
           {/* Card for the list checking user's feeling */}
-          <div className="card col-4 border-0 mx-5 mood-list">
+          <div className="card col-4 mx-5 mood-list">
             <h5 className="card-header">How are you feeling today?</h5>
             <div className="card-body">
               <ListForMoods />
