@@ -1,10 +1,10 @@
-import BackgroundImage from './BackgroundImage'
-import StyledButton from './StyledButton'
-import StyledIcon from './StyledIcon'
-import StyledProgressBar from './StyledProgressBar'
-import StyledSlider from './StyledSlider'
-import StyledCounter from './StyledCounter'
-import StyledDropdown from './StyledDropdown'
+import BackgroundImage from './BackgroundImage.jsx'
+import StyledButton from './StyledButton.jsx'
+import StyledIcon from './StyledIcon.jsx'
+import StyledProgressBar from './StyledProgressBar.jsx'
+import StyledSlider from './StyledSlider.jsx'
+import StyledCounter from './StyledCounter.jsx'
+import StyledDropdown from './StyledDropdown.jsx'
 
 export {
   BackgroundImage,

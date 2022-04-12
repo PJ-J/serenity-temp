@@ -1,29 +1,24 @@
 import React from 'react'
-// import { useState } from 'react';
-import MeditationTimeChart from '../components/MeditationTimeChart.js'
-import DailyChillTime from '../components/DailyChillTime.js'
-import MoodChart from '../components/MoodChart.js'
-import ListForMoods from '../components/ListForMoods.js'
+import MeditationTimeChart from '../components/MeditationTimeChart.jsx'
+import DailyChillTime from '../components/DailyChillTime.jsx'
+import MoodChart from '../components/MoodChart.jsx'
+import ListForMoods from '../components/ListForMoods.jsx'
 import './Chart.css'
 
 const Chart = () => {
-  // const [user, setUser] = useState([
-  //     {username : 'Garrett',
-  //     mood : 'happy'}
-  // ]);
-
-  // const userName =  user.username;
-  // const handleSetUser = ()=> {
-
-  //     fetch('http://localhost:3000/api/users'+id)
-  //     .then(response=>response.json())
-  //     .then(value => setUser(value));
-  // }
-
   return (
-    <section className='d-flex justify-content-center'>
+    <section className="d-flex justify-content-center">
       <div id="chartContainer" className="text-center p-3 m-3">
-        <h1 style={{ textShadow:'0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #fff'}}className="p-3"> Welcome , Garrett</h1>
+        <h1
+          style={{
+            textShadow:
+              '0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #fff',
+          }}
+          className="p-3"
+        >
+          {' '}
+          Welcome , Garrett
+        </h1>
 
         <div className="d-flex justify-content-center row ">
           {/* Card to hold the Meditation time chart */}
@@ -55,7 +50,7 @@ const Chart = () => {
 
           {/* Card to hold the doughnut chart  */}
           <div className="card col-4 border-0 mood-chart">
-            <h5 className="card-header">April</h5>
+            <h5 className="card-header">Mood Tracker</h5>
             <div className="card-body">
               <MoodChart />
             </div>

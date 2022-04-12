@@ -6,7 +6,7 @@ import styles from '../App.module.css'
 
 
 // import logo from './logo.svg';
-import SoundComponent from '../playSound'
+import SoundComponent from '../playSound.jsx'
 import {
   StyledProgressBar,
   StyledSlider,
