@@ -9,6 +9,7 @@ import Users from './pages/Users.jsx'
 import Breathing from './pages/Breathing.jsx'
 import Chart from './pages/Chart.jsx'
 import UserCreated from './pages/UserCreated.jsx'
+import Logo from './pages/Logo.jsx'
 
 document.body.style = 'background: #051622'
 
@@ -32,6 +33,7 @@ const Router = () => {
           <Route path="/breathing" element={<Breathing />} />
           <Route path="/chart" element={<Chart />} />
           <Route path="/usercreated" element={<UserCreated />} />
+          <Route path="/logo" element={<Logo />} />
         </Routes>
         {/* <Footer /> */}
       </BrowserRouter>

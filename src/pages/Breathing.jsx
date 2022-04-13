@@ -1,6 +1,7 @@
 import React from 'react'
 import './Breathing.css'
 import Footer from '../components/Footer.jsx'
+import Fluid1 from '../components/assets/fluid1.mp4'
 
 const Breathing = () => {
   let quotesArr = [
@@ -17,6 +18,23 @@ const Breathing = () => {
 
   return (
     <div>
+     {/* <video
+          autoPlay
+          loop
+          muted
+          style={{
+            position: 'absolute',
+            width: '100%',
+            left: '50%',
+            top: '50%',
+            height: '100%',
+            objectFit: 'fill',
+            transform: 'translate(-50%, -50%)',
+            zIndex: '-1',
+          }}
+        >
+          <source src={Fluid1} type="video/mp4" />
+        </video> */}
       <div
         style={{ fontFamily: 'Merriweather', color: '#fff' }}
         className="container mt-3"

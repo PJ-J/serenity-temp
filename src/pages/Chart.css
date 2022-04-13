@@ -39,3 +39,7 @@ body {
   background-color: #BDC8F2;
   color: rgb(13, 13, 13);
 }
+
+.footer {
+  margin-top: 10vh;
+}

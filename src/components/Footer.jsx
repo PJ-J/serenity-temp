@@ -20,6 +20,7 @@ const Footer = () => {
                             <li><a href="#">r/Meditation</a></li>
                             <li><a href="#">Chart</a></li>
                             <li><a href="#">Account</a></li>
+                            <li><a className="logo" href="/logo">Logo</a></li>
                         </ul>
                     </div>
 

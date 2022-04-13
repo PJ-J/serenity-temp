@@ -239,23 +239,6 @@ class Timer extends Component {
       <div className={styles.App} onMouseMove={this._onMouseMove}>
         <div className={styles['bg-overlay']}></div>
         <BackgroundImage currentImage={this.state.bgImg} />
-        {/* <video
-          autoPlay
-          loop
-          muted
-          style={{
-            position: 'absolute',
-            width: '100%',
-            left: '50%',
-            top: '50%',
-            height: '100%',
-            objectFit: 'cover',
-            transform: 'translate(-50%, -50%)',
-            zIndex: '-1',
-          }}
-        >
-          <source src={Rain} type="video/mp4" />
-        </video> */}
 
         <main className={styles.main}>
           <div className={styles['player-options']}>

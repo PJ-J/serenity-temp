@@ -5,10 +5,28 @@ import MoodChart from '../components/MoodChart.jsx'
 import ListForMoods from '../components/ListForMoods.jsx'
 import Footer from '../components/Footer.jsx'
 import './Chart.css'
+import Fluid3 from '../components/assets/fluid3.mp4'
 
 const Chart = () => {
   return (
-    <div>
+    <div style={{ margin: '6vh'}}>
+       <video
+          autoPlay
+          loop
+          muted
+          style={{
+            position: 'absolute',
+            width: '100%',
+            left: '50%',
+            top: '50%',
+            height: '100%',
+            objectFit: 'cover',
+            transform: 'translate(-50%, -50%)',
+            zIndex: '-1',
+          }}
+        >
+          <source src={Fluid3} type="video/mp4" />
+        </video>
       <section className="d-flex justify-content-center">
         <div id="chartContainer" className="text-center p-3 m-3">
           <h1
@@ -60,7 +78,9 @@ const Chart = () => {
           </div>
         </div>
       </section>
+      <div className='footer'>
       <Footer />
+      </div>
     </div>
   )
 }

@@ -1,0 +1,16 @@
+.logocontainer {
+  height: 80vh;
+  width: 80vw;
+}
+
+.circle {
+  height: 600px;
+  width: 600px;
+  border-radius: 50%;
+  background-color: #d3d3d3;
+  background-image: radial-gradient(circle, #d3d3d3, #051622);
+}
+
+.logoimg {
+  margin-top: 50px;
+}
