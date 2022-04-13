@@ -27,10 +27,9 @@ const MeditationTimeChart = ({}) => {
         ],
 
         options: {
-            animation: {
-                duration: 0
-            }
-        }
+           maintainAspectRatio: false
+          }
+        
       }}
     />
   )

@@ -9,7 +9,7 @@ import Fluid3 from '../components/assets/fluid3.mp4'
 
 const Chart = () => {
   return (
-    <div style={{ margin: '6vh'}}>
+    <div>
        <video
           autoPlay
           loop
@@ -28,13 +28,13 @@ const Chart = () => {
           <source src={Fluid3} type="video/mp4" />
         </video>
       <section className="d-flex justify-content-center">
-        <div id="chartContainer" className="text-center p-3 m-3">
+        <div id="chartContainer" className="container-fluid text-center p-3 m-3">
           <h1
             style={{
               textShadow:
                 '0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #fff',
             }}
-            className="p-3"
+            className='text-light mb-4'
           >
             {' '}
             Welcome , Garrett
@@ -42,7 +42,7 @@ const Chart = () => {
 
           <div className="d-flex justify-content-center row ">
             {/* Card to hold the Meditation time chart */}
-            <div className="card col-4 p-0 med-time">
+            <div className="card col-sm-3 border-0 med-time d-flex align-items-stretch p-0">
               <h5 className="card-header">Meditation Time</h5>
               <div className="card-body">
                 <h5 className="card-title">Last 7 days</h5>
@@ -51,7 +51,7 @@ const Chart = () => {
             </div>
 
             {/* Section for displaying daily meditation time */}
-            <div className="card col-3 p-0 chill-time">
+            <div className="card col-sm-2 border-0 chill-time d-flex align-items-stretch p-0">
               <h5 className="card-header">Daily Progress</h5>
               <div className="card-body">
                 <DailyChillTime />
@@ -59,9 +59,9 @@ const Chart = () => {
             </div>
           </div>
 
-          <div className="d-flex justify-content-center mt-3 ">
+          <div className="d-flex justify-content-center row">
             {/* Card for the list checking user's feeling */}
-            <div className="card col-4 mx-5 mood-list">
+            <div className="card col-sm-3 border-0 mood-list d-flex align-items-stretch p-0">
               <h5 className="card-header">How are you feeling today?</h5>
               <div className="card-body">
                 <ListForMoods />
@@ -69,7 +69,7 @@ const Chart = () => {
             </div>
 
             {/* Card to hold the doughnut chart  */}
-            <div className="card col-4 border-0 mood-chart">
+            <div className="card col-sm-2 border-0 mood-chart d-flex align-items-stretch p-0">
               <h5 className="card-header">Mood Tracker</h5>
               <div className="card-body">
                 <MoodChart />

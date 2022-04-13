@@ -1,6 +1,6 @@
 import React from 'react'
 import Swal from 'sweetalert2'
-// import SweetAlert from 'sweetalert2-react';
+
 
 const ListForMoods = () => {
   // 5 different  functions for 5 different moods
@@ -69,7 +69,7 @@ const ListForMoods = () => {
   return (
     <div>
       <ul className="list-group list-group-flush">
-        <li className="list-group-item">
+        <li style={{ background: 'none'}} className="list-group-item word">
           <button
             className="btn btn-outline-secondary btn-lg border-0"
             onClick={handleSad}
@@ -77,7 +77,7 @@ const ListForMoods = () => {
             Sad
           </button>
         </li>
-        <li className="list-group-item">
+        <li style={{ background: 'none'}} className="list-group-item word">
           <button
             className="btn btn-outline-secondary btn-lg border-0"
             onClick={handleAnxious}
@@ -85,7 +85,7 @@ const ListForMoods = () => {
             Anxious
           </button>
         </li>
-        <li className="list-group-item">
+        <li style={{ background: 'none'}} className="list-group-item word">
           <button
             className="btn btn-outline-secondary btn-lg border-0"
             onClick={handleDecent}
@@ -93,7 +93,7 @@ const ListForMoods = () => {
             Decent
           </button>
         </li>
-        <li className="list-group-item">
+        <li style={{ background: 'none'}} className="list-group-item word">
           <button
             className="btn btn-outline-secondary btn-lg border-0"
             onClick={handleHappy}
@@ -101,7 +101,7 @@ const ListForMoods = () => {
             Happy
           </button>
         </li>
-        <li className="list-group-item">
+        <li style={{ background: 'none'}} className="list-group-item word">
           <button
             className="btn btn-outline-secondary btn-lg border-0"
             onClick={handleMotivated}
