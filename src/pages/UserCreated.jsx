@@ -61,7 +61,4 @@ const Breathing = () => {
   )
 }
 
-// let randomValue = quotesArr[Math.floor(Math.random() * myArray.length)];
-// let quote = quotesArr[Math.floor(Math.random() * myShows.length)];
-
 export default Breathing

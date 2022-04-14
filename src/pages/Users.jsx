@@ -52,12 +52,7 @@ const Users = () => {
         >
           <source src={Fluid1} type="video/mp4" />
         </video>
-      {/* <div className="container text-center">
-              <div className="row">
-                  Users Page
-              </div>
-          </div> */}
-
+     
       <div
         style={{ marginBottom: '20vh' }}
         className="container d-flex justify-content-center mt-5"
