@@ -36,7 +36,7 @@ const Navbar = () => {
           // background: isActive ? "lightgrey" : "none",
           padding: isActive ? "5px" : "5px",
           margin: isActive ? "5px" : "5px",
-          marginLeft: '69vw',
+          marginLeft: '60vw',
           // borderRadius: isActive ? "5px" : "none",
           textDecoration: isActive ? "none" : "none",
         })}
